@@ -178,7 +178,18 @@
 
   let c = title.split("+").join(' ');
  // console.log(c);
+//meta details insert
 
+
+
+document.title= 'Best deals on ' +c;
+
+var meta = document.createElement('meta');
+meta.name = "description";
+meta.content =`Find the best deals on ${c}. from Amazons best ${c} list. Here are the top listed producs. `;
+document.getElementsByTagName('head')[0].appendChild(meta);
+
+//meta details ends here
   //content apend with js////////////////////
   let main = document.getElementById('main');
   let div = document.createElement("div");
