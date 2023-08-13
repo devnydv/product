@@ -1,0 +1,183 @@
+{
+    "id1": {
+        
+        "Earphone": [
+            {
+                "title": "Wired Earphones",
+                "prc": "From Rs. 99",
+                "img": "https://rukminim1.flixcart.com/image/612/612/ktaeqvk0/headphone/y/r/5/4-core-stereo-extra-bass-xs-1-metallic-in-ear-earphone-with-mic-original-imag6nvyzvydghwy.jpeg?q=10"
+            },
+            {
+                "title": "Neckband",
+                "prc": "From Rs. 199",
+                "img": "https://rukminim1.flixcart.com/image/612/612/kkvhea80/headphone/k/s/l/rockerz-255f-pro-rockerz-255-pro-boat-original-imagy42wmmtzjbve.jpeg?q=10"
+            },
+            
+            {
+                "title": "Headset",
+                "prc": "From Rs. 599",
+                "img": "https://rukminim1.flixcart.com/image/612/612/koq33ww0/headphone/0/z/s/gaming-headset-inari-hd-sound-50mm-speaker-retractable-mike-original-imag34dp3gnshckb.jpeg?q=20"
+            },
+            {
+                "title":"TWS",
+                "prc":"From Rs. 299",
+                "img":"https://rukminim1.flixcart.com/image/832/832/ku5ufm80/headphone/4/d/t/led-display-tws-earbuds-royalrich-original-imag7cgdq4sfzymc.jpeg?q=10"
+            },
+            {
+                "title":"Wired Headphones",
+                "prc":"From Rs. 399",
+                "img":"https://rukminim1.flixcart.com/image/750/750/l27wtjk0/headphone/n/l/z/-original-imagdm83tckkzsek.jpeg?q=20"
+            }
+        ],
+        "Accessories": [
+            {
+                "title": "Smart Watches",
+                "prc": "From Rs. 1499",
+                "img": "https://rukminim1.flixcart.com/image/312/312/jmi22kw0/smartwatch/t/g/y/mtf02hn-a-apple-original-imaf9ec8nh6sscfh.jpeg?q=10"
+            },
+            {
+                "title": "Power Bank",
+                "prc": "From Rs. 199",
+                "img": "https://res.cloudinary.com/dqmlkqhwx/image/upload/c_scale,w_200/v1631891989/indexpage/powerbank.jpg"
+            },
+            {
+                "title": "Data Cable",
+                "prc": "From Rs. 99",
+                "img": "https://res.cloudinary.com/dqmlkqhwx/image/upload/c_scale,h_250,w_200/v1631892512/indexpage/datac.jpg"
+            },
+            {
+                "title": "Charger",
+                "prc": "From Rs. 149",
+                "img": "https://res.cloudinary.com/dqmlkqhwx/image/upload/c_scale,h_250,w_200/v1631892716/indexpage/charger.jpg"
+            },
+            {
+                "title": "Keyboards",
+                "prc": "From Rs. 149",
+                "img": "https://res.cloudinary.com/dqmlkqhwx/image/upload/c_scale,h_250,w_200/v1631892716/indexpage/charger.jpg"
+            },
+            
+            {
+                "title": "Mouse",
+                "prc": "From Rs. 999",
+                "img": "https://rukminim1.flixcart.com/image/312/312/k4bms280/external-hard-drive/hdd/q/2/a/wd-wdbyft0040bbk-original-imafmey87zxtvxen.jpeg?q=10"
+            }
+        ]
+    },
+    "id2": {
+        "Realme Mobiles":[
+            "realme-9i-5g-rocking-black-64-gb/p/itm32c638d54e6b5",
+            "realme-c30s-stripe-blue-32-gb/p/itmc206e2354c00f",
+            "realme-c31-light-silver-32-gb/p/itme0f2960da9bbb",
+            "realme-c33-night-sea-32-gb/p/itma112335dbe78a"
+        ],
+   
+    
+        "Redmi Mobiles":[
+            "redmi-9i-sport-carbon-black-64-gb/p/itm17ed463dc779a",
+            "redmi-10-caribbean-green-64-gb/p/itmbfb8dfcdd6e10",
+            "redmi-note-11-se-bifrost-blue-64-gb/p/itm932a7d75da56c"
+        ],
+        "Narzo Mobiles":[
+            "realme-narzo-50-speed-black-128-gb/p/itm9d47ef5d10145",
+            "realme-narzo-30-5g-racing-silver-128-gb/p/itm56837fcb0d6f3",
+            "realme-narzo-30-racing-blue-64-gb/p/itm957dacbc8270c",
+            "realme-narzo-50i-mint-green-32-gb/p/itm53fa214c23501"
+        ],
+        "Samsung Mobiles":[
+            "samsung-galaxy-f13-waterfall-blue-64-gb/p/itm583ef432b2b0c",
+            "samsung-galaxy-f22-denim-blue-128-gb/p/itm30c755943bea0",
+            "samsung-galaxy-f23-5g-aqua-blue-128-gb/p/itme54bc0c2292f4"
+        ],
+   
+    
+        "Infinix Mobiles":[
+            "infinix-note-12-jewel-blue-64-gb/p/itm8d7ef81209637",
+            "infinix-hot-11-2022-aurora-green-64-gb/p/itm196d12b3f4f87",
+            "infinix-hot-11s-polar-black-64-gb/p/itmb8753dc90027c",
+            "infinix-smart-6-starry-purple-64-gb/p/itmd4041ce33d262",
+            "infinix-smart-6-hd-aqua-sky-32-gb/p/itme9743e28b0cf7"
+        ],
+        "Oppo Mobiles":[
+            "oppo-k10-black-carbon-128-gb/p/itm6205e7e72fe0c",
+            "oppo-k10-5g-ocean-blue-128-gb/p/itm28cf887931942",
+            "oppo-f19-midnight-blue-128-gb/p/itm82f60569dc6db",
+            "oppo-reno7-5g-startrails-blue-256-gb/p/itm6110d8481be93",
+            "oppo-f19s-glowing-gold-128-gb/p/itm31a22cdfa85cf",
+            "oppo-f19-pro-5g-fluid-black-128-gb/p/itmd90acf0f30ad6"
+        ],
+        "Iphone":[
+            "apple-iphone-11-black-128-gb/p/itm8244e8d955aba",
+            "apple-iphone-12-mini-white-64-gb/p/itmf3b16d1640898",
+            "apple-iphone-13-green-256-gb/p/itm14914e5e84473",
+            "apple-iphone-12-blue-256-gb/p/itm3be487cd1dea5"
+        ],
+        "Vivo Mobiles":[
+            "vivo-t1x-space-blue-64-gb/p/itm9e8207e7825a9",
+            "vivo-t1-44w-starry-sky-128-gb/p/itm2a08ebbea3689",
+            "vivo-t1-5g-rainbow-fantasy-128-gb/p/itm594222523bd8f"
+        ],
+        
+        "Wired Earphones":
+        [
+            "realme-buds-classic-rma2001-wired-earphones-hd-microphone-headset/p/itm011ed7abae9dd",
+            "boat-bassheads-242-wired-headset/p/itm3c088db035ab1",
+            "boult-audio-bassbuds-x1-wired-headset/p/itmb985f93455bba",
+            "realme-buds-2-wired-headset/p/itm393326c26b6ad",
+            "boat-bassheads-103-black-wired-headset/p/itmcef2a10b6ea14",
+            "prowarp-prodart-sam-sung-original-ehs61-deep-bass-sound-cancellation-wired-headset/p/itm9fc432466559f",
+            "boat-bassheads-100-wired-headset/p/itme346ff4c6846f"
+        ],
+        "Neckband":[
+            "oneplus-bullets-wireless-z2-bluetooth-headset/p/itm4c3852314bb61",
+            "realme-buds-wireless-2-neo-type-c-fast-charge-bass-boost-bluetooth-headset/p/itm64e67d64bd846",
+            "oraimo-oeb-e49d-shark-3-bluetooth-headset/p/itmfadd26c865923",
+            "boult-audio-probass-ycharge-fast-charging-pro-calling-mic-12h-playtime-bluetooth-headset/p/itm71f3b501f7662",
+            "boat-rockerz-255-pro-asap-charge-upto-40-hours-playback-bluetooth-headset/p/itm569e59dc49154",
+            "aroma-nb119-titanium-48-hours-playtime-bluetooth-neckband-headset/p/itm87f59e3fc076c"
+        ],
+        "Airpods":[
+            "apple-airpods-pro-2nd-generation-bluetooth-headset/p/itmbfc083335b35c",
+            "apple-airpods-2nd-gen-charging-case-bluetooth-headset-mic/p/itm8f1b2b0173ce4",
+            "apple-airpods-pro-magsafe-charging-case-bluetooth-headset/p/itm0847811966368?affid=bittumail",
+            "apple-airpods-3rd-generation-lightning-charging-case-bluetooth-headset/p/itm7f946b906e294"
+        ],
+        "Headset":[
+            "boult-audio-bass-bud-q2-with40mm-drivers-punchy-deep-bass-lightweight-protein-leather-padded-wired-headset/p/itm2a2ab8d4a00d6",
+            "redgear-cloak-wired-gaming-headset/p/itm1630daaac0176",
+            "cosmic-byte-g4000-wired-gaming-headset/p/itm2b056bc4b401f",
+            "boat-bassheads-900-wired-headset/p/itm1f5b43896a3b5",
+            "cosmic-byte-blazar-wired-gaming-headset/p/itm72571ea99f42c",
+            "sony-310ap-wired-headset/p/itmd2997107336aa"
+        ],
+        "TWS":[
+            "oneplus-bullets-wireless-z2-bluetooth-headset/p/itm4c3852314bb61"
+        ],
+        "Wired Headphones":[
+            "oneplus-bullets-wireless-z2-bluetooth-headset/p/itm4c3852314bb61"
+        ],
+        "Smartwatches":[
+            "noise-icon-buzz-bt-calling-1-69-display-ai-voice-assistance-built-in-games-smartwatch/p/itm8e2dc3457a808"
+        ],
+        "Back Cases":[
+            "carefone-back-cover-oppo-reno8-pro-5g/p/itm4a20d3a1d2094"
+        ],
+        "Power Bank":[
+            "syska-10000-mah-power-bank-fast-charging/p/itm4cfc25dfd4dc7"
+        ],
+        "Data Cable":[
+            "boat-usb-type-c-cable-3-1-5-m-a320/p/itma010289de41cb"
+        ],
+        "Chargers":[
+            "boat-18w-power-wcd-qc3a-charger-combo-compatible-vivo-oppo-gionee-xiomi-redmi-realme-infinix-poco-iphone-samsung-mi-devices-type-c-cable-included/p/itmbb2fc2e537375"
+        ],
+        "Memory Card":[
+            "samsung-evo-plus-128-gb-microsdxc-class-10-130-mb-s-memory-card/p/itmbab01b617ec93"
+        ],
+        "Screen Guards":[
+            "eitansha-creation-edge-screen-guard-redmi-note-11-pro-5g-plus-poco-x4-5g-mi-11x-11x-pro-f4-gt-5g/p/itmc412313b45a35"
+        ],
+        "Hard Disk":[
+            "seagate-expansion-windows-mac-3-years-data-recovery-services-portable-1-tb-external-hard-disk-drive-hdd/p/itmcefa901213e7c"
+        ]
+    }
+}
