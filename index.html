@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" href="icons/icon.webp">
+  <link rel="shortcut icon" href="/icons/icon.webp" type="image/x-icon">
+
+
+  <meta content='index,follow' name='robots' />
+  <meta content='Dev Nararan Yadav' name='author' />
+  <meta content='all' name='robots' />
+  <meta content='en' name='language' />
+  <meta content='IN' name='country' />
+
+  <meta property="og:locale" content="en_In">
+  <meta property="og:type" content="article">
+
+  <meta name="theme-color" content="#0114E8">
+  <meta name='Keywords'
+    content='Best Deals on Top Mobile Brands, Deals, flipkart deals, all flipkart product, online deals, deals on mobiles, deals on earphones, laptops, Gaming_Laptops, DSLR, Printers, Inks, Back_Cases' />
+  <meta http-equiv='content-language' content='en-in'>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:site_name" content="TopTechBuzz">
+  <meta property="og:url" content="https://www.product.lowoncost.xyz">
+  <meta property="og:type" content="website">
+
+
+
+
+</head>
+
+<body>
+
+
+  <!-- <div id="loading">loading...</div> -->
+  <div id="smain">
+
+    <div id='titl'>
+
+      <div class="about">
+
+
+      </div>
+    </div>
+
+
+
+    <div id="main">
+
+    </div>
+
+  </div>
+
+
+
+  <div id="footer">
+    <div class="elem">
+      <h4>Techhere</h4>
+      <p>Techhere is a blog website that deals with topics related to tech, deals, offers and new products in
+        the market. We put our efforts to find the best Items. Products for our users at lowest prices.</p>
+    </div>
+    <div class="elem">
+      <h4>Deals</h4>
+      <a href="?title=smartphones" title="smartphones">
+        <p>Smartphones</p>
+      </a>
+      <a href="?title=Air_Conditioners" title="air conditioners">
+        <P>Air Conditioners</P>
+      </a>
+      <a href="?title=Refrigerators" title="Refrigerators">
+        <P>Refrigerators</P>
+      </a>
+      <a href="?title=Kitchen_Appliances" title="Kitchen_Appliances">
+        <p>Kitchen Appliances</p>
+      </a>
+    </div>
+    <div class="elem">
+      <h4> Follow and contact</h4>
+
+      <a href="https://www.facebook.com/Lowoncost/" title="facebook page">
+        <p>Facebook</p>
+      </a>
+      <!--       <a href=""><p>Privacy</p></a> -->
+      <!-- <a href=""><p>Instagram</p></a> -->
+    </div>
+    <div class="elem">
+      <h4>More</h4>
+      <a href="https://www.toptechbuzz.xyz" title="TopTechBuzz">
+        <p>TopTechBuzz</p>
+      </a>
+      <a href="https://storywalle.blogspot.com/" title="StoryWalle Read stories">
+        <p>StoryWalle</p>
+      </a>
+      <a href="https://techbuzz.rf.gd" title="techbuzz">
+        <p>TechBuzz</p>
+      </a>
+    </div>
+  </div>
+</body>
+<script>
+  //........................code for menu bar..........................
+  async function mdata() {
+    let menudata = await fetch("data/test.json")
+    let gotmdata = await menudata.json();
+    //console.log(gotmdata);
+    let nobj = Object.keys(gotmdata.id1)
+    //console.log(nobj.length);
+    let about = document.getElementsByClassName("about");
+
+
+
+
+
+
+
+
+    for (let i = 0; i < nobj.length; i++) {
+      let cattitle = `<h3>${nobj[i]}</h3>`;
+      about[0].insertAdjacentHTML('beforeend', cattitle);
+
+      let lgtinner = Object.keys(gotmdata.id1[nobj[i]])
+      //console.log(lgtinner.length)
+      for (let j = 0; j < lgtinner.length; j++) {
+        let valinner = lgtinner[j]
+
+        let gettitle = gotmdata.id1[nobj[i]][valinner].title;
+        let c = gettitle.split(" ").join('+');
+
+        let link = `
+        <a href=/?cat=${c} title='${gotmdata.id1[nobj[i]][valinner].title}'>
+          <p>${gotmdata.id1[nobj[i]][valinner].title}</p>
+            </a>`
+        about[0].insertAdjacentHTML('beforeend', link)
+        //console.log(link);
+      }
+
+    }
+  }
+  mdata();
+
+
+  //menubar ends here......................................................
+
+  let url = new URLSearchParams(window.location.search);
+  let title = url.get('cat');
+  if (title == null) {
+    title = "Realme+Mobiles";
+  }
+
+
+  let c = title.split("+").join(' ');
+ // console.log(c);
+
+  //content apend with js////////////////////
+  let main = document.getElementById('main');
+  let div = document.createElement("div");
+  
+  let h1 = document.createElement('h1');
+  
+  div.setAttribute("id", 'head');
+  h1.innerText = "Best Deals on " + c;
+  
+  div.appendChild(h1);
+
+  main.appendChild(div);
+
+  async function createNdiv() {
+    let getres = await fetch("data/firebase.json");
+    let data = await getres.json();
+    data = data.category;
+    //console.log(data[c]);
+
+
+    let fdiv = document.createElement("div");
+    fdiv.setAttribute("class", 'ndiv');
+    let p= document.createElement('p');
+    p.innerText = data[c].details.des
+fdiv.appendChild(p)
+main.appendChild(fdiv)
+
+let array =data[c].items
+let itemnum= 0;
+array.forEach(element => {
+ console.log(element) 
+  
+function ndivloop(){
+  
+return `
+          
+          
+          <div class="ndiv">
+          <div class="img">
+             <img src=${element.img} alt="${element.title}">
+          </div>
+          <div class="details">
+                    <h2>${element.title}</h2>
+                    
+
+                    <p class="price">Price: ${element.prc}</p>
+                    <p class="mrp">Total Ratings: ${element.ratc}</p>
+                    <p class="rat">${element.rat}</p>
+                      <button class="but">
+                        <a href="${element.fetchfrom}?&linkCode=sl2&tag=devnydv0c-21&linkId=63b2baa33ed1aebbf3354c1baafda39e&language=en_IN&ref_=as_li_ss_tl" target="blank_" title="Buy Link">
+                        Buy Now
+                        </a>
+                        </button>
+                        <button class="but">
+                        <a href="details.html?cat=${title}&item=${itemnum}" title="Details">
+                        Details
+                        </a>
+                        </button>
+                    
+                   <!-- <h3>Highlights:</h3>  -->
+                            
+          </div>
+        </div>
+          `
+
+ }
+ main.insertAdjacentHTML("beforeend", ndivloop())
+ itemnum++
+});
+
+
+    
+
+          // let ndiv=
+          // main.insertAdjacentHTML("beforeend",ndiv)
+  }
+  createNdiv()
+
+
+
+  //////////////////code for seo///////////////////
+  let heading = document.querySelector("h1").innerText
+  console.log(heading);
+  let src = document.createElement('script');
+  let schema =
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.toptechbuzz.xyz/"
+    }, {
+      "@type": "ListItem",
+      "position": 2,
+      "name": `${c}`,
+      "item": `https://www.toptechbuzz.xyz/?cat=${title}`
+    }, {
+      "@type": "ListItem",
+      "position": 3,
+      "name": `${heading}`,
+      "item": `https://www.toptechbuzz.xyz/${heading}`
+    }]
+  }
+  src.setAttribute('type', 'application/ld+json');
+  src.textContent = JSON.stringify(schema);
+  document.head.appendChild(src);
+
+</script>
+<script>
+  function notvisi() {
+
+    let btn = document.getElementById('ul');
+    btn.classList.toggle('notvisi');
+
+  }
+</script>
+
+
+</html>
