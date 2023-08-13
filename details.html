@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" href="icons/icon.webp">
+  <link rel="shortcut icon" href="/icons/icon.webp" type="image/x-icon">
+
+
+  <meta content='index,follow' name='robots' />
+  <meta content='Dev Nararan Yadav' name='author' />
+  <meta content='all' name='robots' />
+  <meta content='en' name='language' />
+  <meta content='IN' name='country' />
+
+  <meta property="og:locale" content="en_In">
+  <meta property="og:type" content="article">
+
+  <meta name="theme-color" content="#0114E8">
+  <meta name='Keywords'
+    content='Best Deals on Top Mobile Brands, Deals, flipkart deals, all flipkart product, online deals, deals on mobiles, deals on earphones, laptops, Gaming_Laptops, DSLR, Printers, Inks, Back_Cases' />
+  <meta http-equiv='content-language' content='en-in'>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:site_name" content="TopTechBuzz">
+  <meta property="og:url" content="https://www.toptechbuzz.xyz">
+  <meta property="og:type" content="website">
+
+
+
+
+</head>
+
+<body>
+
+  <!-- <div id="loading">loading...</div> -->
+  <div id="smain">
+
+    <div id='titl'>
+
+      <div class="about">
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+    <div id="main">
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+</body>
+<script>
+  //........................code for menu bar..........................
+  
+
+
+
+
+
+  //........................code for menu bar..........................
+  async function mdata() {
+    let menudata = await fetch("data/test.json")
+    let gotmdata = await menudata.json();
+    //console.log(gotmdata);
+    let nobj = Object.keys(gotmdata.id1)
+    //console.log(nobj.length);
+    let about = document.getElementsByClassName("about");
+
+
+
+
+
+
+
+
+    for (let i = 0; i < nobj.length; i++) {
+      let cattitle = `<h3>${nobj[i]}</h3>`;
+      about[0].insertAdjacentHTML('beforeend', cattitle);
+
+      let lgtinner = Object.keys(gotmdata.id1[nobj[i]])
+      //console.log(lgtinner.length)
+      for (let j = 0; j < lgtinner.length; j++) {
+        let valinner = lgtinner[j];
+
+        let gettitle = gotmdata.id1[nobj[i]][valinner].title;
+        let c = gettitle.split(" ").join('+');
+
+        let link = `
+        <a href=/?cat=${c} title='${gotmdata.id1[nobj[i]][valinner].title}'>
+          <p>${gotmdata.id1[nobj[i]][valinner].title}</p>
+            </a>`
+        about[0].insertAdjacentHTML('beforeend', link);
+        //console.log(link);
+      }
+
+    }
+  }
+
+  mdata();
+
+
+  //menubar ends here......................................................
+
+
+
+
+
+  let url = new URLSearchParams(window.location.search);
+  //console.log(window.location.pathname);
+  let cat = url.get('cat');
+  let itemnum = url.get('item')
+  console.log(cat, itemnum)
+  if (cat == "null") {
+    cat = "Realme Mobiles";
+    itemnum = 0;
+  }
+
+  
+
+
+  async function gdata() {
+
+let res = await fetch(`data/firebase.json`)
+let data = await res.json()
+data= data.category[cat].items[itemnum]
+console.log(data)
+
+let main = document.getElementById('main')
+
+
+let nimg;
+if (data.img === undefined) {
+    console.log('not')
+} else {
+
+    nimg = data.img;
+}
+
+
+
+
+
+
+let ndivv = `
+<div class="ndiv">
+<div class="img">
+<img src="${nimg}" alt="${data.title}">
+</div>
+<div class="details">
+<h1>${data.title}</h1>
+<p class="price">Price: ${data.prc}</p>
+<p class="mrp">total Ratings: ${data.ratc}</p>
+<p class="rat">${data.rat}</p>
+<button class="but">
+<a href="${data.fetchfrom}?&linkCode=sl2&tag=devnydv0c-21&linkId=63b2baa33ed1aebbf3354c1baafda39e&language=en_IN&ref_=as_li_ss_tl" target="blank_">Buy Now</a>
+    
+</div>
+</div>
+`
+
+main.innerHTML = ndivv
+
+
+
+let h2 = document.createElement('h2');
+h2.innerText = 'Details:'
+
+let specdiv = document.createElement('div');
+let specdetais = document.createElement('div')
+
+specdiv.setAttribute('class', 'spec');
+specdetais.setAttribute('class', 'details');
+specdiv.appendChild(h2);
+
+main.appendChild(specdiv);
+
+let lngth =data.features.length
+console.log(lngth);
+for (let i = 0; i <= lngth - 1; i++) {
+    let spec = document.createElement("h3");
+    let specdtls = document.createElement("p");
+
+   
+    specdtls.innerText = data.features[i]
+    //specdtls.setAttribute('class', 'mrp');
+
+
+    // dtls.appendChild(spec)
+    // dtls.appendChild(specdtls)
+    specdiv.appendChild(spec)
+    specdiv.appendChild(specdtls)
+
+
+
+}
+
+
+
+
+
+
+}
+gdata()
+
+
+
+
+
+</script>
+<script>
+  function notvisi() {
+
+    let btn = document.getElementById('ul');
+    btn.classList.toggle('notvisi');
+
+  }
+</script>
+
+
+</html>
