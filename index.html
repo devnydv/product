@@ -36,8 +36,32 @@
 </head>
 
 <body>
-
-
+  <nav id="hemu">
+    <div id="logo">
+  
+  
+      <img id="mnicon" src="icons/menu_black_24dp.svg" alt="Menu icon" onclick="notvisi()">
+      <a href="/">
+        <p>Product</p>
+      </a>
+    </div>
+    <div id="menug">
+      <ul id="ul" class="notvisi">
+        <a href="/" title="Home">
+          <li>Home</li>
+        </a>
+        <a href="https://lowoncost.xyz" title="Deals and offers">
+          <li>Lowoncost</li>
+        </a>
+  
+        <!-- <a href="review.html" title="Review">
+          <li>Review</li>
+        </a> -->
+  
+      </ul>
+    </div>
+  </nav>
+  
   <!-- <div id="loading">loading...</div> -->
   <div id="smain">
 
@@ -67,16 +91,16 @@
     </div>
     <div class="elem">
       <h4>Deals</h4>
-      <a href="?title=smartphones" title="smartphones">
+      <a href="?cat=smartphones" title="smartphones">
         <p>Smartphones</p>
       </a>
-      <a href="?title=Air_Conditioners" title="air conditioners">
+      <a href="?cat=Air+Conditioners" title="air conditioners">
         <P>Air Conditioners</P>
       </a>
-      <a href="?title=Refrigerators" title="Refrigerators">
+      <a href="?cat=Refrigerators" title="Refrigerators">
         <P>Refrigerators</P>
       </a>
-      <a href="?title=Kitchen_Appliances" title="Kitchen_Appliances">
+      <a href="?cat=Kitchen+Appliances" title="Kitchen_Appliances">
         <p>Kitchen Appliances</p>
       </a>
     </div>
@@ -91,14 +115,12 @@
     </div>
     <div class="elem">
       <h4>More</h4>
-      <a href="https://www.toptechbuzz.xyz" title="TopTechBuzz">
-        <p>TopTechBuzz</p>
-      </a>
+      
       <a href="https://storywalle.blogspot.com/" title="StoryWalle Read stories">
         <p>StoryWalle</p>
       </a>
-      <a href="https://techbuzz.rf.gd" title="techbuzz">
-        <p>TechBuzz</p>
+      <a href="https://lowoncost.xiz" title="deals and odders">
+        <p>Deals and offers</p>
       </a>
     </div>
   </div>
@@ -150,7 +172,7 @@
   let url = new URLSearchParams(window.location.search);
   let title = url.get('cat');
   if (title == null) {
-    title = "Realme+Mobiles";
+    title = "Speaker";
   }
 
 
@@ -185,8 +207,9 @@ fdiv.appendChild(p)
 main.appendChild(fdiv)
 
 let array =data[c].items
+let reversedArray =array.reverse()
 let itemnum= 0;
-array.forEach(element => {
+reversedArray.forEach(element => {
  console.log(element) 
   
 function ndivloop(){
