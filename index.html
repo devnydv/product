@@ -219,7 +219,7 @@ main.appendChild(fdiv)
 
 let array =data[c].items
 let reversedArray =array.reverse()
-let itemnum= 0;
+let itemnum= reversedArray.length-1;
 reversedArray.forEach(element => {
  console.log(element) 
   
@@ -258,7 +258,7 @@ return `
 
  }
  main.insertAdjacentHTML("beforeend", ndivloop())
- itemnum++
+ itemnum--
 });
 
 
