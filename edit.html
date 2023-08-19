@@ -25,7 +25,7 @@
         <br>
         <button id="getamazbut">Fetch</button>
         <button id="submit">Submit</button>
-
+ <div id="notFound">
     </div>
 
 
@@ -102,6 +102,7 @@
         //console.log(inpurl);
         async function getamadata() {
             //fetch url datafrom amazon ...............
+           document.getElementById('notFound').innerHTML = '';
             let mainamadata = await fetch(`https://aged-bread-22a5.paycodehelp.workers.dev/product/${inpurl}`);
             let gotamadata = await mainamadata.json();
             console.log(gotamadata);
@@ -109,6 +110,7 @@
                 getamazbut.style.background = 'blue';
                 //console.log(gotamadata.product_detail);
             }
+            document.getElementById('notFound').innerHTML = 'data not found'
             window.localStorage.setItem('amadata', gotamadata);
             mainfather = gotamadata
             // console.log(mainfather)
