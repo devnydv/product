@@ -270,7 +270,7 @@ let res = await fetch(`data/firebase.json`)
 let data = await res.json()
 data= data.category[cat].items[itemnum]
 console.log(data)
-
+document.title = data.title;
 let main = document.getElementById('main')
 
 
